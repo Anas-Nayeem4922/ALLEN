@@ -1,0 +1,55 @@
+.banner{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    /* width: 100%; */
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5rem;
+}
+
+.tagline{
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.tagline p{
+    font-size: 32px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    min-width: 50%;
+    color: white;
+}
+
+.options p{
+    font-size: 20px;
+}
+
+.image img{
+    height: 400px;
+    width: 400px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+section img{
+    height: 610px;
+    width: 1088px;
+}

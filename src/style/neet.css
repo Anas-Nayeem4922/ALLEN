@@ -1,0 +1,72 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1A1D28;
+    color: #ffffff;
+}
+
+/* Breadcrumb styling */
+.breadcrumb {
+    padding: 20px;
+    font-size: 14px;
+    color: white;
+    margin: 0rem 10rem 0 10rem;
+}
+
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content container */
+.content-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 4rem 0 6rem;
+}
+
+.text-section {
+    max-width: 60%;
+}
+
+.text-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.image-section .main-image {
+    max-width: 300px;
+    height: auto;
+}
+
+/* CTA banner styling */
+
+.cta-banner{
+    display: flex;
+    justify-content: center;
+}
+
+.cta-banner img {
+    width: 1088px;
+    height: 59;
+    margin-right: 15px;
+}
+
+.neet-banner{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.neet-banner img{
+    height: 270px;
+    width: 1088px;
+}
