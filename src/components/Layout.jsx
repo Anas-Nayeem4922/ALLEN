@@ -1,11 +1,24 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, Outlet } from 'react-router-dom';
 import '../style/layout.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faTwitter, faInstagram, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Layout = () => {
+    useEffect(() => {
+        const hoverElement = document.getElementById('exam');
+        const popup = document.getElementById('drop');
+        hoverElement.addEventListener('mouseenter', () => {
+            popup.style.display = 'block';
+        });
+        document.addEventListener('click', (event) => {
+            if (!popup.contains(event.target) && event.target !== hoverElement) {
+                popup.style.display = 'none';
+            }
+        });
+        
+    }, []);
     return (
         <div>
             <header>
@@ -14,8 +27,12 @@ const Layout = () => {
                         <img src="https://allen.in/logo_dark.svg" alt="Allen" />
                     </div>
                     <div className="info-options">
-                        <p>Exams</p>
-                        <p>Programs</p>
+                        <p className="exam" id="exam">Exams</p>
+                        <div className="dropdown-menu" id="drop">
+                            <Link to="/exam/neet"><p className='exams'>NEET</p></Link>
+                            <Link to="/exam/jee"><p className='exams'>JEE</p></Link>
+                        </div>
+                        <p className="program">Programs</p>
                         <p>Scholarships</p>
                         <p>Test Series</p>
                         <p>Study Materials</p>

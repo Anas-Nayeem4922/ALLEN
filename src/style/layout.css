@@ -128,3 +128,29 @@ header{
 .social-icons svg:hover {
     color: #ffffff;
 }
+
+.dropdown-menu {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 8rem 0.5rem 1rem;
+    display: none;
+    position: absolute;
+    top: 70px;
+    background-color: #2c4171;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu p:hover {
+    color: #A0A3B1;
+}
+
+.exams{
+    padding: 10px 0;
+    cursor: pointer;
+    color: white;
+}
+
+.exams:hover {
+    color: #ffffff90
+}
