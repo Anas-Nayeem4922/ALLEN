@@ -5,7 +5,7 @@ const Neet = () => {
     return (
         <div>
             <div className="breadcrumb">
-                <Link to="/home">Home</Link>&nbsp; &gt; &nbsp; 
+                <Link to="/">Home</Link>&nbsp; &gt; &nbsp; 
                 <Link to="">NEET</Link>
             </div>
 

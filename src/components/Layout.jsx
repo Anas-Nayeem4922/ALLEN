@@ -24,7 +24,7 @@ const Layout = () => {
             <header>
                 <div className="info-tab">
                     <div className="logo">
-                        <Link to="/home"><img style={{cursor : "pointer"}} src="https://allen.in/logo_dark.svg" alt="Allen" /></Link>
+                        <Link to="/"><img style={{cursor : "pointer"}} src="https://allen.in/logo_dark.svg" alt="Allen" /></Link>
                     </div>
                     <div className="info-options">
                         <p className="exam" id="exam">Exams</p>
