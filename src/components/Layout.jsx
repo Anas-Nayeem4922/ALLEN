@@ -29,8 +29,8 @@ const Layout = () => {
                     <div className="info-options">
                         <p className="exam" id="exam">Exams</p>
                         <div className="dropdown-menu" id="drop">
-                            <Link to="/exam/neet"><p className='exams'>NEET</p></Link>
-                            <Link to="/exam/jee"><p className='exams'>JEE</p></Link>
+                            <Link to="/exam/neet" style={{textDecoration : 'none'}}><p className='exams'>NEET</p></Link>
+                            <Link to="/exam/jee" style={{textDecoration : 'none'}}><p className='exams'>JEE</p></Link>
                         </div>
                         <p className="program">Programs</p>
                         <p>Scholarships</p>
